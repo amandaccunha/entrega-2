@@ -1,0 +1,152 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Container principal do player */
+.player-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilo do player */
+.player {
+    background: #181818; 
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo da capa do álbum */
+.album-cover {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Nome da música */
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #b3b3b3; /* Cinza claro */
+}
+
+/* Estilo dos controles de música */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões de controle */
+button {
+    background-color: #1ed760; 
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeito de hover */
+button:hover {
+    background-color: #1ed760;
+    transform: scale(1.1);
+}
+
+/* Animação de pulse para o botão de play */
+.play-btn {
+    animation: pulse 2s infinite;
+}
+
+/* Animação de "pulse" para o botão */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Seletor de música */
+.music-selector {
+    margin-top: 15px;
+}
+
+select {
+    background: #282828; /* Cor de fundo escuro */
+    border: 1px solid #444;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    outline: none;
+    width: 220px;
+    text-align: center;
+}
+
+/* Efeito de hover e foco no seletor */
+select:hover, select:focus {
+    background-color: #1DB954;
+    border-color: #1DB954;
+}
+
+/* Status de música */
+#status {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #b3b3b3; /* Cor cinza claro */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Quando a música começa a tocar */
+#status.visible {
+    opacity: 1;
+}
+
+/* Adicionando ícones para os botões */
+button i {
+    font-size: 1.5rem;
+}

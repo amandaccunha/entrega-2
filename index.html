@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Player de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="player">
+            <div class="album-cover">
+                <img id="albumCover" src="album-default.jpg" alt="Album Cover">
+            </div>
+
+            <h2 id="musicName">Nenhuma música tocando</h2>
+
+            <div class="controls">
+                <button onclick="tocarMusica()" class="play-btn">
+                    <i class="fas fa-play"></i> Tocar
+                </button>
+                <button onclick="pararMusica()" class="stop-btn">
+                    <i class="fas fa-stop"></i> Parar
+                </button>
+            </div>
+
+            <div class="music-selector">
+                <select id="musicas">
+                    <option value="musica1">Música 1</option>
+                    <option value="musica2">Música 2</option>
+                    <option value="musica3">Música 3</option>
+                </select>
+            </div>
+
+            <p id="status" class="status">Nenhuma música tocando.</p>
+        </div>
+    </div>
+
+    <script src="simulador.js"></script>
+</body>
+</html>
