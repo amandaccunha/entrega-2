@@ -1,0 +1,23 @@
+{
+    "musicas": {
+      "musica1": {
+        "id": "musica1",
+        "nome": "Clouds",
+        "arquivo": "musica1.mp3",
+        "capa": "https://i.pinimg.com/736x/ab/35/17/ab3517a1e7c0aed0b65b24c9e3a5fb32.jpg"
+      },
+      "musica2": {
+        "id": "musica2",
+        "nome": "My Fault",
+        "arquivo": "musica2.mp3",
+        "capa": "https://i.pinimg.com/736x/5e/c6/19/5ec619cd3028e6f24e5d74e0d0045fcd.jpg"
+      },
+      "musica3": {
+        "id": "musica3",
+        "nome": "One Day",
+        "arquivo": "musica3.mp3",
+        "capa": "https://i.pinimg.com/736x/bf/40/07/bf4007146b981692ee212836566a6a74.jpg"
+      }
+    }
+  }
+  
